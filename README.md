@@ -104,29 +104,30 @@ Launch:
 `./minishell`
 You’ll see a prompt like:
 `minishell$`
+
 Basic examples:
-# Simple command
+### Simple command
 `minishell$ ls -la`
 
-# With pipes
+### With pipes
 `minishell$ ls | grep .c | wc -l`
 
-# Redirections
+### Redirections
 `minishell$ cat < input.txt`
 `minishell$ echo "hello" > out.txt`
 `minishell$ echo "another line" >> out.txt`
 
-# Heredoc
+### Heredoc
 `minishell$ cat << EOF`
 `type anything here`
 `until this line:`
 `EOF`
 
-# Environment
+### Environment
 `minishell$ echo $HOME`
 `minishell$ echo $?`
 
-# Logical operators
+### Logical operators
 `minishell$ mkdir test && cd test`
 `minishell$ false || echo "this runs"`
 `minishell$ (false && echo nope) || echo "this runs instead"`
