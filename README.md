@@ -87,5 +87,8 @@ Implemented built-ins (without extra options/flags unless specified):
 
 ### Build
 
-```bash
+```bash```
 make
+This will compile the project and create the minishell executable.
+
+To clean object files:
