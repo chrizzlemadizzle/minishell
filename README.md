@@ -87,8 +87,50 @@ Implemented built-ins (without extra options/flags unless specified):
 
 ### Build
 
-```bash```
-make
+`bash`
+`make`
 This will compile the project and create the minishell executable.
 
 To clean object files:
+`make clean`
+To clean everything (including the executable):
+`make fclean`
+To rebuild from scratch:
+`make re`
+
+## 🖥️ Usage
+
+Launch:
+`./minishell`
+You’ll see a prompt like:
+`minishell$`
+Basic examples:
+# Simple command
+`minishell$ ls -la`
+
+# With pipes
+`minishell$ ls | grep .c | wc -l`
+
+# Redirections
+`minishell$ cat < input.txt`
+`minishell$ echo "hello" > out.txt`
+`minishell$ echo "another line" >> out.txt`
+
+# Heredoc
+`minishell$ cat << EOF`
+`type anything here`
+`until this line:`
+`EOF`
+
+# Environment
+`minishell$ echo $HOME`
+`minishell$ echo $?`
+
+# Logical operators
+`minishell$ mkdir test && cd test`
+`minishell$ false || echo "this runs"`
+`minishell$ (false && echo nope) || echo "this runs instead"`
+
+Exit options:
+`Ctrl-D` on an empty line
+`exit`
