@@ -5,7 +5,7 @@ The goal: travel back in time and talk to your computer through a simple, intera
 
 ---
 
-## ✨ Features
+## Features
 
 - Prompt that waits for a new command
 - Command history (powered by `readline`)
@@ -36,7 +36,7 @@ The goal: travel back in time and talk to your computer through a simple, intera
 
 ---
 
-## 🔧 Built-in commands
+## Built-in commands
 
 Implemented built-ins (without extra options/flags unless specified):
 
@@ -50,7 +50,7 @@ Implemented built-ins (without extra options/flags unless specified):
 
 ---
 
-## 🏗️ Tech & Constraints
+## Tech & Constraints
 
 - Language: **C**
 - Build system: **Makefile**
@@ -76,7 +76,7 @@ Implemented built-ins (without extra options/flags unless specified):
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -98,7 +98,7 @@ To clean everything (including the executable):
 To rebuild from scratch:
 `make re`
 
-## 🖥️ Usage
+## Usage
 
 Launch:
 `./minishell`
